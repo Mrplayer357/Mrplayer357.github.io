@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+ <head>
+   <link href = "rnb.css" rel = "stylesheet">
+   <meta charset = "UTF-8">
+   <title>SC Anderson</title>
+<style>
+
+
+
+body {
+background:url('A1.jpeg') no-repeat center center;
+ background-size: cover;
+background-color: black;
+margin: 0;
+
+}
+
+#asides {
+max-width: 330px;
+}
+
+#asides p {
+font-size : 18px;
+}
+
+#asides img {
+float:left;
+border: 6px solid #ECECEC;
+border-radius: 6px;
+}
+
+#arti img {
+border: 6px solid #ECECEC;
+border-radius: 6px;
+float: left;
+margin: 8px;
+}
+
+#arti a {
+color: #AB2323;
+ text-transform: uppercase;
+}
+
+
+
+
+</style>
+ </head>
+
+
+
+
+
+<div id = "gridcon">
+  <div id = "intro">
+    <header>
+      <h1 class = "title"> Welcome to South Carolina </h1>
+        <img id = "flag" src = "SCFLAG.png" alt ="South Carolina State FLAG" >
+    </header>
+  </div>
+  
+<div id= "navi">
+    <nav>
+      <a href = "index.html">Home</a>
+      <a href = "Columbia.html">State Capital</a>
+      <a href = "Anderson.html">Anderson</a>
+      <a href = "Greenville.html">Greenville</a>
+    </nav>
+  </div>
+
+
+  <div id = "arti">
+    <body>
+      <section>
+       
+        <article>
+          <h2 class = "title">ANDERSON, SOUTH CAROLINA</h2>
+           <p>
+Anderson is a small city located in the North-Western region of South Carolina and has an estimated population of 202,000.  Anderson was officially incorporated in the year of 1833. According to <a href = "https://datausa.io/profile/geo/anderson-county-sc" target="_blank"> databusa.io </a>, the median household income in 2021 was around $57,000 - That is slightly lower than the average median household income of South Carolina.
+           </p>
+           <img src = "Anderson.jpg" alt ="City of Anderson" width = "525" height = "450" >
+	   <img src = "Andersonloc.png" alt ="Anderson on Map" width = "525" height = "450" >
+        </article>
+
+      </section>
+
+  </div>
+
+
+  <div id = "asides">
+    <aside>
+        <p>
+          <h2 class = "title" >Additional Information</h2>	
+       </p>
+
+<p>
+The famous actor "Chadwick Boseman" who starred as the Marvel super-hero "Black Panther" is from Anderson, South Carolina. 
+<img src = "bpan.jpg" alt = "Chadwick Boseman">
+</p>
+  
+</aside>
+
+
+
+  </div>
+
+  <div id = "contform">
+
+      <Section id = "form">
+
+        <h2 class = "title">Contact Us</h2>
+      <p>If you wish to contact us, complete and submit the form below:</p>
+
+
+
+              <form action="index.html" method="POST" id="formN" enctype="multipart/form-data" onSubmit="confirmEmail()">
+<script>
+    
+function confirmEmail() {
+        var email1 = document.getElementById('email1').value;
+        var email2 = document.getElementById('email2').value;
+
+        if (email1 != email2) {
+            alert("Email addresses are not the same.");
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script>
+
+	<p>
+      <label for="first">First Name:</label>
+      <input type="text" name="first" id="first" placeholder = "First name" required></p>
+	<p>
+      <label for="last">Last Name:</label>
+      <input type="text" name="last" id="last" placeholder = "Last name" required> </p>
+	<p>
+      <label for="email1">Email:</label>
+      <input type="email" placeholder="Your email address" id="email1" required> </p>
+   	<p>
+      <label for="email2">Confirm Email:</label>
+      <input type="email" placeholder="Confirm your email address" id="email2" required" >
+	
+ </p>	
+	<p>
+      <label for="userinput">Your Message:</label>
+      <input type="textarea" placeholder="What do you want to tell us?" id="userinput" rows = "10" cols = "20" required>
+	 </p>
+ 	<p>
+
+      <input type="submit" value="Submit">
+   </p>
+               </form>
+        </Section>
+
+  </div>
+
+
+    </body>
+
+  </div>
+</html>

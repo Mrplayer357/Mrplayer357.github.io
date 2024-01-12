@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+ <head>
+   <link href = "rnb.css" rel = "stylesheet">
+   <meta charset = "UTF-8">
+   <title>SC Greenville</title>
+<style>
+
+
+
+body {
+background:url('Greenville.jpg') no-repeat center center;
+ background-size: cover;
+background-color: black;
+margin: 0;
+
+}
+
+#asides {
+max-width: 330px;
+padding: 20px;
+
+}
+
+#asides img {
+border: 6px solid #ECECEC;
+border-radius: 6px;
+}
+
+#arti img {
+border: 6px solid #ECECEC;
+border-radius: 6px;
+float: left;
+margin: 8px;
+}
+
+#arti a {
+color: #AB2323;
+ text-transform: uppercase;
+}
+
+
+
+
+</style>
+ </head>
+
+
+
+
+
+<div id = "gridcon">
+  <div id = "intro">
+    <header>
+      <h1 class = "title"> Welcome to South Carolina </h1>
+        <img id = "flag" src = "SCFLAG.png" alt ="South Carolina State FLAG" >
+    </header>
+  </div>
+  
+<div id= "navi">
+    <nav>
+      <a href = "index.html">Home</a>
+      <a href = "Columbia.html">State Capital</a>
+      <a href = "Anderson.html">Anderson</a>
+      <a href = "Greenville.html">Greenville</a>
+    </nav>
+  </div>
+
+
+  <div id = "arti">
+    <body>
+      <section>
+       
+        <article>
+          <h2 class = "title">GREENVILLE, SOUTH CAROLINA</h2>
+           <p>
+Greenville is a large city located in the North-Western region of South Carolina and has an estimated population of 519,178.  Greenville was officially incorporated in the year of 1831. According to <a href = "https://datausa.io/profile/geo/Greenville-county-sc" target="_blank"> databusa.io </a>,Greenville's median household income in 2021 was around $66,000 - Considerably higher than the average median household income of South Carolina that sits around $58,000.
+           </p>
+           <img src = "Greenvillec.jpg" alt ="City of Greenville" width = "525" height = "450" >
+	   <img src = "Greenvilleloc.png" alt ="Greenville on Map" width = "525" height = "450" >
+        </article>
+
+      </section>
+
+  </div>
+
+
+  <div id = "asides">
+    <aside>
+        <p>
+          <h2 class = "title" >Additional Information</h2>	
+       </p>
+
+<p>
+Greenville is one of the fastest growing cities in the region, and it's without a doubt due to the many notable companies located there. 
+These are a few of the many companies that have fueled Greenville's growth:
+
+
+<h3 class = "title>Notable Companies<h3>
+<ul>
+<p>
+<li>Lockheed Martin 
+<img src = "LHM.png" alt = "Lockheed Martin Logo" width = "140" height = "140"></li>
+</p>
+<p>
+<li>BMW <br>
+<img src = "BMW.jpg" alt = "BMW Logo" width = "140" height = "140"></li>
+</p>
+<p>
+<li>Jacobs<br>
+<img src = "JACOBS.png" alt = "Jacobs Technology Logo" width = "140" height = "140"></li>
+</p>
+<p>
+<li>GE Power <br>
+<img src = "GEPOWER.png" alt = "GEPOWER Logo" width = "250" height = "140"></li>
+</p>
+<p>
+<li>Michelin<br>
+<img src = "Michelin.png" alt = "Michelin Logo" width = "140" height = "140"></li>
+</p>
+</ul>
+
+</p>
+  
+</aside>
+
+
+
+  </div>
+
+  <div id = "contform">
+
+      <Section id = "form">
+
+        <h2 class = "title">Contact Us</h2>
+      <p>If you wish to contact us, complete and submit the form below:</p>
+
+
+
+              <form action="index.html" method="POST" id="formN" enctype="multipart/form-data" onSubmit="confirmEmail()">
+<script>
+    
+function confirmEmail() {
+        var email1 = document.getElementById('email1').value;
+        var email2 = document.getElementById('email2').value;
+
+        if (email1 != email2) {
+            alert("Email addresses are not the same.");
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script>
+
+	<p>
+      <label for="first">First Name:</label>
+      <input type="text" name="first" id="first" placeholder = "First name" required></p>
+	<p>
+      <label for="last">Last Name:</label>
+      <input type="text" name="last" id="last" placeholder = "Last name" required> </p>
+	<p>
+      <label for="email1">Email:</label>
+      <input type="email" placeholder="Your email address" id="email1" required> </p>
+   	<p>
+      <label for="email2">Confirm Email:</label>
+      <input type="email" placeholder="Confirm your email address" id="email2" required" >
+	
+ </p>	
+	<p>
+      <label for="userinput">Your Message:</label>
+      <input type="textarea" placeholder="What do you want to tell us?" id="userinput" rows = "10" cols = "20" required>
+	 </p>
+ 	<p>
+
+      <input type="submit" value="Submit">
+   </p>
+               </form>
+        </Section>
+
+  </div>
+
+
+    </body>
+
+  </div>
+</html>

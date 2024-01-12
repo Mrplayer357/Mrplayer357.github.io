@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+ <head>
+   <link href = "rnb.css" rel = "stylesheet">
+   <meta charset = "UTF-8">
+   <title>SC Columbia</title>
+<style>
+
+
+
+body {
+background:url('colbg.jpg') no-repeat center center;
+ background-size: cover;
+background-color: black;
+
+}
+
+#arti a {
+color: #AB2323;
+ text-transform: uppercase;
+}
+
+
+
+
+</style>
+ </head>
+
+
+
+
+
+<div id = "gridcon">
+  <div id = "intro">
+    <header>
+      <h1 class = "title"> Welcome to South Carolina </h1>
+        <img id = "flag" src = "SCFLAG.png" alt ="South Carolina State FLAG" >
+    </header>
+  </div>
+  
+<div id= "navi">
+    <nav>
+      <a href = "index.html">Home</a>
+      <a href = "Columbia.html">State Capital</a>
+      <a href = "Anderson.html">Anderson</a>
+      <a href = "Greenville.html">Greenville</a>
+    </nav>
+  </div>
+
+
+  <div id = "arti">
+    <body>
+      <section>
+       
+        <article>
+          <h2 class = "title">SOUTH CAROLINA STATE CAPITAL: COLUMBIA</h2>
+           <p>
+Columbia, the captial of South Carolina, is located in the center of the State and has an estimated population of 830,000.  Columbia was officially chartered as a town in 1805, and later chartered as a city in 1854. According to <a href = "https://datausa.io/profile/geo/columbia-sc-31000US17900" target="_blank"> databusa.io </a>, the median household income in 2021 was around $59,000 - That is around the average median household income of the entire state.
+           </p>
+           <img src = "colcity.jpg" alt ="City of Columiba" width = "525" height = "450" >
+        </article>
+
+      </section>
+
+  </div>
+
+
+  <div id = "asides">
+    <aside>
+        <p>
+          <h2 class = "title" >POPULAR ATTRACTIONS</h2>	
+       </p>
+
+<p>
+	<h3 class = "title">University Of South Carolina</h3>
+	<img src = "USCp.jpg" width = "210" height = "210">
+	<img src = "USCp1.jpg" width = "210" height = "210">
+	<img src = "uscp2.png" width = "210" height = "210">
+	<img src = "gc.jpg" width = "210" height = "210">
+<h3 class = "title">Riverbanks Zoo and Garden</h3>
+	<img src = "RB1.jpg" width = "210" height = "210">
+	<img src = "RB2.jpg" width = "210" height = "210">
+
+
+</p>
+  
+</aside>
+
+
+
+  </div>
+
+  <div id = "contform">
+
+      <Section id = "form">
+
+        <h2 class = "title">Contact Us</h2>
+      <p>If you wish to contact us, complete and submit the form below:</p>
+
+
+
+              <form action="index.html" method="POST" id="formN" enctype="multipart/form-data" onSubmit="confirmEmail()">
+<script>
+    
+function confirmEmail() {
+        var email1 = document.getElementById('email1').value;
+        var email2 = document.getElementById('email2').value;
+
+        if (email1 != email2) {
+            alert("Email addresses are not the same.");
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script>
+
+	<p>
+      <label for="first">First Name:</label>
+      <input type="text" name="first" id="first" placeholder = "First name" required></p>
+	<p>
+      <label for="last">Last Name:</label>
+      <input type="text" name="last" id="last" placeholder = "Last name" required> </p>
+	<p>
+      <label for="email1">Email:</label>
+      <input type="email" placeholder="Your email address" id="email1" required> </p>
+   	<p>
+      <label for="email2">Confirm Email:</label>
+      <input type="email" placeholder="Confirm your email address" id="email2" required" >
+	
+ </p>	
+	<p>
+      <label for="userinput">Your Message:</label>
+      <input type="textarea" placeholder="What do you want to tell us?" id="userinput" rows = "10" cols = "20" required>
+	 </p>
+ 	<p>
+
+      <input type="submit" value="Submit">
+   </p>
+               </form>
+        </Section>
+
+  </div>
+
+
+    </body>
+
+  </div>
+</html>
